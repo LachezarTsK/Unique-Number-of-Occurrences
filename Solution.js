@@ -11,6 +11,7 @@ var uniqueOccurrences = function (input) {
         }
         valueToFrequency.set(n, valueToFrequency.get(n) + 1);
     }
+    
     const uniqueFrequencies = new Set();
     for (let n of valueToFrequency.values()) {
         if (uniqueFrequencies.has(n)) {
