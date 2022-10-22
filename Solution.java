@@ -11,6 +11,7 @@ public class Solution {
         for (int n : input) {
             valueToFrequency.put(n, valueToFrequency.getOrDefault(n, 0) + 1);
         }
+        
         Set<Integer> uniqueFrequencies = new HashSet<>();
         for (int n : valueToFrequency.values()) {
             if (!uniqueFrequencies.add(n)) {
